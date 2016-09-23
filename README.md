@@ -1,6 +1,6 @@
 # contena
 
-Dockerized kontena-cli in a wrapper that just works
+Doc^H^H^HContainerized kontena-cli in a wrapper that just works
 
 ## Install
 
