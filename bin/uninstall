@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -e
+
+rm /usr/local/bin/contena

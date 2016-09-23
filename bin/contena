@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+VERSION=${KONTENA_VERSION:-latest}
+
+set -e
+
+docker volume create --name contena_home > /dev/null
+
+docker run -it --rm \
+  --network host \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v contena_home:/home/kontena \
+  -v $(pwd):/host \
+  -w /host \
+  kontena/cli:$VERSION $@
